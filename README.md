@@ -9,7 +9,12 @@ Get set up on dev: (assumes you're connecting to mongo, I filed an issue since t
 5. mongod
 6. open a new terminal tab to root directory
 7. npm run build:dev
-8. npm start
+8. npm run dev
+
+To run production locally:
+
+1. npm run build:prod
+2. npm start
 
 To deploy:
 
