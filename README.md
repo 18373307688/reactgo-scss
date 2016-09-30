@@ -5,7 +5,7 @@ Get set up on dev: (assumes you're connecting to mongo, I filed an issue since t
 1. clone
 2. npm install
 3. sudo mkdir -p /data/db
-4. sudo chown -R `id -u` /data/db
+4. sudo chown -R \`id -u\` /data/db
 5. mongod
 6. open a new terminal tab to root directory
 7. npm run build:dev
