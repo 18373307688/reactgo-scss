@@ -1,6 +1,7 @@
 # Dons notes
 
 Get set up on dev:
+
 1. clone
 2. npm install
 3. sudo mkdir -p /data/db
@@ -11,6 +12,7 @@ Get set up on dev:
 8. npm start
 
 To deploy:
+
 1. heroku create
 2. heroku addons:create mongolab
 3. git push heroku master
