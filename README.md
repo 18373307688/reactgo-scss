@@ -1,6 +1,6 @@
 # Dons notes
 
-Get set up on dev:
+Get set up on dev: (assumes you're connecting to mongo, I filed an issue since the repo doesn't work with no DB right now)
 
 1. clone
 2. npm install
