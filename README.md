@@ -1,3 +1,24 @@
+# Dons notes
+
+Get set up on dev:
+1. clone
+2. npm install
+3. sudo mkdir -p /data/db
+4. sudo chown -R `id -u` /data/db
+5. mongod
+6. open a new terminal tab to root directory
+7. npm run build:dev
+8. npm start
+
+To deploy:
+1. heroku create
+2. heroku addons:create mongolab
+3. git push heroku master
+4. heroku open
+
+
+
+
 # reactGo
 
 [![Dependency Status][dep-status-img]][dep-status-link] [![devDependency Status][dev-dep-status-img]][dev-dep-status-link]
