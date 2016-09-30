@@ -8,6 +8,9 @@ import * as types from 'types';
 import configureStore from 'store/configureStore';
 import preRenderMiddleware from 'middlewares/preRenderMiddleware';
 
+// Will get webpack to pick up the scss through ./client entry
+import './css/app.scss';
+
 // Grab the state from a global injected into
 // server-generated HTML
 const initialState = window.__INITIAL_STATE__;

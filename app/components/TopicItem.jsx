@@ -1,8 +1,4 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames/bind';
-import styles from 'css/components/topic-item';
-
-const cx = classNames.bind(styles);
 
 const TopicItem = ({ text, id, incrementCount, decrementCount, destroyTopic }) => {
   const onIncrement = () => {
@@ -16,16 +12,16 @@ const TopicItem = ({ text, id, incrementCount, decrementCount, destroyTopic }) =
   };
 
   return (
-    <li className={cx('topic-item')} key={id}>
-      <span className={cx('topic')}>{text}</span>
+    <li className='topic-item' key={id}>
+      <span className='topic'>{text}</span>
       <button
-        className={cx('button', 'increment')}
+        className='button increment'
         onClick={onIncrement}>+</button>
       <button
-        className={cx('button', 'decrement')}
+        className='button decrement'
         onClick={onDecrement}>-</button>
       <button
-        className={cx('button', 'destroy')}
+        className='button destroy'
         onClick={onDestroy}>{String.fromCharCode(215)}</button>
     </li>
   );

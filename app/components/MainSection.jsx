@@ -1,9 +1,5 @@
 import React, { PropTypes } from 'react';
 import TopicItem from 'components/TopicItem';
-import classNames from 'classnames/bind';
-import styles from 'css/components/main-section';
-
-const cx = classNames.bind(styles);
 
 const MainSection = ({ topics, onIncrement, onDecrement, onDestroy }) => {
   const topicItems = topics.map((topic, key) => {
@@ -19,9 +15,9 @@ const MainSection = ({ topics, onIncrement, onDecrement, onDestroy }) => {
   });
 
   return (
-    <div className={cx('main-section')}>
-      <h3 className={cx('header')}>Vote for your favorite hack day idea</h3>
-      <ul className={cx('list')}>{topicItems}</ul>
+    <div className='main-section'>
+      <h3 className='header'>Vote for your favorite hack day idea</h3>
+      <ul className='list'>{topicItems}</ul>
     </div>
   );
 };
